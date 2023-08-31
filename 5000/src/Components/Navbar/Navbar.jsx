@@ -78,6 +78,8 @@ const Navbar = () => {
 
   return (
     <>
+    <h3 style={{fontFamily:"Muli",fontSize:"12px",fontWeight:"700",letterSpacing:"2px",textAlign:"center",color:"black",backgroundColor:"pink"}}>GET RS 100 OFF ON ORDERS ABOVE RS 300</h3>
+   
     <div style={{
       width:"100%",
       height:"80px",
@@ -121,7 +123,6 @@ const Navbar = () => {
   
 </Stack>
 <div>
-<IoLocationSharp size="1.5rem" cursor="pointer" />
 </div>
 
       </div>
@@ -151,6 +152,7 @@ const Navbar = () => {
           
    Sign In/Register
   </Text>
+  <div><IoLocationSharp size="1.5rem" cursor="pointer" /></div>
 </div>) :
 (<Menu>
   {({ isOpen }) => (
@@ -162,11 +164,13 @@ const Navbar = () => {
        >
         My Account
       </MenuButton>
+      
       <MenuList>
         <Link to="/cart"><MenuItem>My Orders</MenuItem></Link>
         <MenuItem>My Address</MenuItem>
         <MenuItem onClick={Logout} >SignOut</MenuItem>
       </MenuList>
+      
     </>
   )}
 </Menu>)
